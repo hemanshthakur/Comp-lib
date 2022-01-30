@@ -1,26 +1,36 @@
 body {
     background-image: url('bg-img-main.jpg');
-    /* background-size: 100% 100%;
+    /* background-color:black; */
+    background-size: 100% 100%;
     background-attachment: fixed;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     color: white;
     font-family: 'Murecho', sans-serif;
 }
-.navbar-tag{
-  
-}
+
 .header-tag {
     font-size: 3rem;
-    font-family: 'Dongle', sans-serif;
     margin-top: 1rem;
     margin-left: 2rem;
 }
 .lists{
-      
-      min-height: 60%;
-      display: column;
-      justify-content: space-between;
+      position:relative;
+      display:flex;
+      flex-direction: column;
+      justify-content: stretch;
+      list-style-type: none;
+      font-size: 1.5rem;
 }
 .list-items{
+     display: inline;
      text-decoration: none;
+     margin: 2rem 1rem;
+     width: max-content;
+}
+.header-tag .lists{
+    position:relative;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; 
 }
