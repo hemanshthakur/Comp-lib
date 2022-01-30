@@ -1,0 +1,26 @@
+body {
+    background-image: url('bg-img-main.jpg');
+    /* background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+    color: white;
+    font-family: 'Murecho', sans-serif;
+}
+.navbar-tag{
+  
+}
+.header-tag {
+    font-size: 3rem;
+    font-family: 'Dongle', sans-serif;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.lists{
+      
+      min-height: 60%;
+      display: column;
+      justify-content: space-between;
+}
+.list-items{
+     text-decoration: none;
+}
