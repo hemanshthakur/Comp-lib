@@ -98,3 +98,8 @@ a{
 .list-items a:hover{
     color:var(--hover-over);
 }
+.about-text{
+    align-self: center;
+    width: 70%;
+    font-size: 2rem;
+}
