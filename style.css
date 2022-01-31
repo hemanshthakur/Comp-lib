@@ -1,31 +1,43 @@
-body {
+:root{
+    --primary-colour:white;
+    --secondary-colour:black;
+    --hover-over: #00E1EF;
+}body {
     background-image: url('bg-img-main.jpg');
     /* background-color:black; */
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: white;
+    color: var(--primary-colour);
     font-family: 'Murecho', sans-serif;
+    margin: 0rem;
 }
 
 .header-tag {
     font-size: 3rem;
-    margin-top: 1rem;
-    margin-left: 2rem;
+    margin:0rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    background-color: var(--hover-over);
+    border-bottom-right-radius:2rem ;
+    display: flex;
+    justify-content: space-between;
 }
 .lists{
+      
       position:relative;
       display:flex;
       flex-direction: column;
-      justify-content: stretch;
       list-style-type: none;
       font-size: 1.5rem;
+      /* margin-top: 0rem; */
+      
 }
 .list-items{
      display: inline;
      text-decoration: none;
      margin: 2rem 1rem;
-     width: max-content;
+     justify-self: flex-start;
 }
 .header-tag .lists{
     position:relative;
@@ -33,4 +45,56 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end; 
+    margin: 0rem;
+    align-self: flex-end;
+}
+.header-tag  a{
+    color: var(--secondary-colour);
+}
+.header-tag a:hover{
+   color: var(--primary-colour);
+}
+.header-tag .list-items a:hover{
+    color: var(--primary-colour);
+ }
+.main-container{
+    display: flex;
+    justify-content: stretch;
+    margin-top: 5rem;
+    
+}
+.text-and-btn{
+   display: flex;
+   justify-content: center;
+}
+.main-text{
+    align-self: flex-start;
+    justify-self: flex-start;
+    width: 50%;
+    font-size: 4rem;
+    /* margin-top: 0rem;
+    margin-left: 0rem; */
+}
+a{
+    text-decoration: none;
+    color: var(--primary-colour);
+}
+.btn-get-started {
+    align-self:flex-end;
+    
+}
+.btn-get-started a{
+    border: 0.1rem solid var(--primary-colour);
+    font-size: 1.5rem;
+    border-radius: 0.2rem ;
+    padding: 0.8rem 3rem ;
+}
+.btn-get-started a:hover{
+    border: 0.1rem solid  var(--hover-over);
+    background-color: var(--hover-over);
+    color: var(--secondary-colour);
+    
+}
+.list-items a:hover{
+    color:var(--hover-over);
 }
