@@ -1,9 +1,10 @@
-:root{
+ :root{
   --primary-colour:white;
   --secondary-colour:#1a1a1a;
   --hover-over: #00E1EF;
   --shade-color:#888888;
 }
+/*
 body {
   background-color:var(--secondary-colour);
   background-size: 100% 100%;
@@ -37,10 +38,108 @@ a{
 .back-arrow{
   position: absolute;
   left:1rem;
-}
-.avatar{
+} */
+
+
+/* avatar-css */
+
+/* .avatar{
   vertical-align: middle;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+} */
+
+/* alert-bar-css */
+
+/* .alert-bar{
+    background-color:#121212 ;
+    color:white;
+    display:flex;
+    width: 20rem;
+    position:fixed;
+    bottom:2rem;
+    left: 40%;
+    justify-content: space-around;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
 }
+.btn-retry{
+  padding: 0;
+  border: none;
+  background: none;
+  color: rgb(0, 195, 255);
+  font-weight: 700;
+  cursor: pointer;
+}
+.alert-see-btn{
+  border-radius:2rem;
+} */
+
+/* badge-css */
+/* .badges{
+  text-align: center;
+  background-color: red;
+  color: white;
+  border-radius:2rem;
+  width:2rem;
+  font-size:1rem; 
+} */
+/* badge-over-icon */
+/* .icon-badge{
+  position:relative;
+  font-size: 3rem ;
+  color:rgb(0, 195, 255);
+}
+.badge-for-icon{
+      position: absolute;
+      bottom: 0rem;
+      right: 0;
+} */
+
+/* badge-over-avatar */
+/* .avatar{
+  vertical-align: middle;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.badge-on-avatar{
+  padding:1rem ;
+  position:relative;
+  display:inline
+}
+.badge-for-avatar{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}  */
+
+/* button */
+/* .primary-button{
+  text-decoration: none;
+  color: var(--primary-colour);
+  background-color: var(--secondary-colour);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+} */
+/* .link-button{
+  color:var(--secondary-colour) ;
+} */
+/* .icon-button{
+  color: black;
+  font-size: xx-large;
+} */
+
+/* floating-button */
+/* .btn-floating{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: red;
+  color: var(--primary-colour);
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+} */
