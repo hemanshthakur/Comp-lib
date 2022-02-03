@@ -1,0 +1,57 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.main-container{
+    
+    height: 280px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px #888888;
+    border-radius: 5px;
+    
+}
+.image-hero{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+.text-alignment{
+    margin: 0px 10px;
+}
+.header-tag{    
+    font-weight:bold ;
+
+}
+.author-Name{
+    color: gray;
+    font-size: 14px;
+   
+}
+p{
+    margin: 6px 10px;
+}
+.description-Text{
+    color: gray;
+    font-size: 12px;
+}
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+   padding: 5px;
+   border: none;
+   background: none;
+}
+button:hover{
+    background-color: #f2f2f2;
+}
+.text-buttons{
+    color:#000066;
+    font-weight: bold;
+}
+
+.icon-buttons{
+    border-radius: 100%;
+}
