@@ -3,6 +3,7 @@
   --secondary-colour:#1a1a1a;
   --hover-over: #00E1EF;
   --shade-color:#888888;
+  --code-box-color:#001a33;
 }
 
 body {
@@ -39,53 +40,47 @@ a{
   position: absolute;
   left:1rem;
 }
-.body-container {
+.content-box{
+box-shadow: 0 0 .2rem var(--shade-color);
+width: 90%;
+align-self: center;
+margin: 2rem 5%;  
+}
+.main-content-div{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  flex-direction: column;
+  margin:5% 
 }
-
-.container {
+.demo-live{
   width: 50%;
-  height: 66%;
-  overflow-x: auto;
-  border-radius: 12px;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
 }
-
-.language {
-  color: white;
-  background-color: #1f4287;
-  padding: 12px 16px;
-  border-radius: 5px 5px 0 0;
-  text-align: right;
+.demo-code{
+  display: flex;
+  align-self: center;
+  width: 90%;
+  margin: 1rem 5%;
+  white-space: none;
+  background-color: var(--code-box-color);
+  border-radius: 0.5rem;
+  overflow: auto;
 }
-
-.code-wrapper {
-  position: relative;
-}
-
-.code-wrapper pre {
-  background-color: #071e3d;
-  color: white;
-  padding: 8px 20px;
-  border-radius: 0 0 5px 5px;
-}
-
 
 
 /* avatar-css */
 
 .avatar{
   vertical-align: middle;
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
 }
 
 /* alert-bar-css */
 
-/* .alert-bar{
+.alert-bar{
     background-color:#121212 ;
     color:white;
     display:flex;
@@ -107,19 +102,21 @@ a{
 }
 .alert-see-btn{
   border-radius:2rem;
-} */
+  background-color: var(--primary-colour);
+  cursor: pointer;
+}
 
 /* badge-css */
-/* .badges{
+.badges{
   text-align: center;
   background-color: red;
   color: white;
   border-radius:2rem;
   width:2rem;
   font-size:1rem; 
-} */
+} 
 /* badge-over-icon */
-/* .icon-badge{
+.icon-badge{
   position:relative;
   font-size: 3rem ;
   color:rgb(0, 195, 255);
@@ -128,15 +125,10 @@ a{
       position: absolute;
       bottom: 0rem;
       right: 0;
-} */
+}
 
 /* badge-over-avatar */
-/* .avatar{
-  vertical-align: middle;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-}
+
 .badge-on-avatar{
   padding:1rem ;
   position:relative;
@@ -146,7 +138,7 @@ a{
   position: absolute;
   bottom: 0;
   right: 0;
-}  */
+} 
 
 /* button */
 /* .primary-button{

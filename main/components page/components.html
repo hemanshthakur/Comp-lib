@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/main/components page/component-style.css">
     <!-- styles for cards  -->
     <link rel="stylesheet" href="/main/components page/styles for cards/styles.css">
-    <link rel="stylesheet" href="/main/components page/prism.css">
 </head>
 
 <body>
@@ -18,58 +17,289 @@
         <a class="back-arrow" href="/main/index.html"><i class="fas fa-arrow-left"></i></a>
         <a href="/main/index.html">ArsenalUI</a>
     </nav>
-    <div class="content-container">
+    <!-- avatar-html -->
 
-        <h2 class="mainheading">avatar</h2>
+    <div class="content-box">
+        <div class="main-content-div">
+            <h2 class="main-heading">*Avatar</h2>
+            <h2>Example</h2>
+            <div class="demo-live">
+                <img src="https://lh3.googleusercontent.com/ogw/ADea4I7lNwdmzDDg79Bgv-pAeD1TzNRSbW3FZewUUkvvfg=s83-c-mo"
+                    alt="Avatar" class="avatar">
+            </div>
 
-        <div class="code-wrapper">
-            <pre>
-                    <code id="code" class="language-html">
-                       &lt;img src="avatar1.png" alt="Avatar" class="avatar"&gt; 
-                    </code>
-                </pre>
 
+            <h3>HTML</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+                &lt;img src="avatar.png" alt="Avatar" class="avatar"&gt; 
+            </code>
+        </pre>
+            </div>
+
+            <h3>CSS</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+                .avatar{
+                    vertical-align: middle;
+                    width: 3rem;
+                    height: 3rem;
+                    border-radius: 50%;
+                  }
+                   
+            </code>
+        </pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- alert-html-->
+
+    <div class="content-box">
+        <div class="main-content-div">
+            <h2 class="main-heading">*Alert</h2>
+            <h2>Example</h2>
+            <div class="demo-live">
+                <button id="btn-show-alert" class="alert-see-btn">
+                    Show
+                </button>
+                <button id="btn-hide-alert" class="alert-see-btn">
+                    Hide
+                </button>
+
+                <div id="alert-box" class="alert-bar">
+                    <p class="text-alert">
+                        Oops! There is an error, please retry.
+                    </p>
+                    <button class="btn-retry">
+                        Retry
+                    </button>
+
+                </div>
+            </div>
+
+
+            <h3>HTML</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+            &lt;button id="btn-show-alert" class="alert-see-btn"&gt;Show &lt;button&gt;
+            &lt;button id="btn-hide-alert" class="alert-see-btn"&gt;Hide&lt;button&gt;
+            &lt;div id="alert-box"class="alert-bar"&gt;
+                     &lt;p class="text-alert"&gt;Oops! There is an error, please retry.&lt;p&gt;
+                    &lt;button class="btn-retry"&gt;Retry&lt;button&gt;
+            &lt;div&gt;
+            </code>
+        </pre>
+            </div>
+
+            <h3>CSS</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+                .alert-bar{
+                    background-color:#121212 ;
+                    color:white;
+                    display:flex;
+                    width: 20rem;
+                    position:fixed;
+                    bottom:2rem;
+                    left: 40%;
+                    justify-content: space-around;
+                    border-radius: 0.3rem;
+                    font-family: 'Roboto', sans-serif;
+                }
+                .btn-retry{
+                  padding: 0;
+                  border: none;
+                  background: none;
+                  color: rgb(0, 195, 255);
+                  font-weight: 700;
+                  cursor: pointer;
+                }
+                .alert-see-btn{
+                  border-radius:2rem;
+                  background-color: var(--primary-colour);
+                  cursor: pointer;
+                }
+            </code>
+        </pre>
+            </div>
+            <h3>JS</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+                const btnShowAlert = document.querySelector("#btn-show-alert")
+                const boxAlert = document.querySelector("#alert-box")
+                const btnHideAlert = document.querySelector("#btn-hide-alert")
+                
+                btnHideAlert.style.display="none"
+                boxAlert.style.display="none"
+                
+                btnShowAlert.addEventListener("click",()=>{
+                    boxAlert.style.display="flex"
+                    btnHideAlert.style.display="block"
+                    btnShowAlert.style.display="none"
+                }
+                )
+                btnHideAlert.addEventListener("click",()=>{
+                    boxAlert.style.display="none"
+                    btnShowAlert.style.display="block"
+                    btnHideAlert.style.display="none"
+                }
+                )
+            </code>
+        </pre>
+            </div>
         </div>
     </div>
 
 
-    <!-- avatar-html -->
+    <!-- badges-html -->
 
-    <!-- <img src="avatar1.png" alt="Avatar" class="avatar"> -->
+    <div class="content-box">
+        <div class="main-content-div">
+            <h2 class="main-heading">*Alert</h2>
+            <h2>Example</h2>
+            <div class="demo-live">
+                <!-- badges -->
+                <div>
+                    <p>Badge</p>
+                   <div class="badges">23</div>
+               </div>
+                    <!-- badge on icon -->
+       <div>
+           <p>Badge on icon</p>
+       <div class="badge-on-icon">
+           <i class="fab fa-twitter icon-badge"><div class="badges badge-for-icon">99+</div></i>
+       </div>
+   </div>
+       <!-- badge-on-avatar -->
+       <div>
+           <p>Badge on avatar</p>
+       <div class="badge-on-avatar">
+           <img src="https://lh3.googleusercontent.com/ogw/ADea4I7lNwdmzDDg79Bgv-pAeD1TzNRSbW3FZewUUkvvfg=s83-c-mo" alt="Avatar" class="avatar">
+           <div class="badges badge-for-avatar">99+</div>
+       </div>
+   </div>
+            </div>
 
 
-    <!-- alert-html-->
-    <!-- <button id="btn-show-alert" class="alert-see-btn">
-        Show 
-    </button>
-    <button id="btn-hide-alert" class="alert-see-btn">
-        Hide
-    </button>
+            <h3>HTML</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+                &lt;-- badges --&gt;
+                &lt;div class="badges"&gt;23&lt;div&gt;
+            
+                &lt;-- badge on icon --&gt;
+                &lt;div class="badge-on-icon"&gt;
+                    &lt;i class="fab fa-twitter icon-badge"&gt;&lt;div class="badges badge-for-icon"&gt;99+&lt;div&gt;&lt;i&gt;
+                &lt;div&gt;
+            
+                &lt;-- badge-on-avatar --&gt;
+                &lt;div class="badge-on-avatar"&gt;
+                    &lt;img src="avatar1.png" alt="Avatar" class="avatar"&gt;
+                    &lt;div class="badges badge-for-avatar"&gt;99+&lt;div&gt;
+                &lt;div&gt;
+            </code>
+        </pre>
+            </div>
 
-    <div id="alert-box"class="alert-bar">
-        <p class="text-alert">
-            Oops! There is an error, please retry.
-        </p>
-        <button class="btn-retry">
-            Retry
-        </button>
-        
+            <h3>CSS</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+                /* badge-css */
+                .badges{
+                  text-align: center;
+                  background-color: red;
+                  color: white;
+                  border-radius:2rem;
+                  width:2rem;
+                  font-size:1rem; 
+                } 
+                /* badge-over-icon */
+                .icon-badge{
+                  position:relative;
+                  font-size: 3rem ;
+                  color:rgb(0, 195, 255);
+                }
+                .badge-for-icon{
+                      position: absolute;
+                      bottom: 0rem;
+                      right: 0;
+                }
+                
+                /* badge-over-avatar */
+                
+                .badge-on-avatar{
+                  padding:1rem ;
+                  position:relative;
+                  display:inline
+                }
+                .badge-for-avatar{
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                } 
+            </code>
+        </pre>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+
+
+    <!-- <div class="content-box">
+        <div class="main-content-div">
+            <h2 class="main-heading">*Alert</h2>
+            <h2>Example</h2>
+            <div class="demo-live">
+               
+            </div>
+
+
+            <h3>HTML</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+            
+            </code>
+        </pre>
+            </div>
+
+            <h3>CSS</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+               
+            </code>
+        </pre>
+            </div>
+            <h3>JS</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+                
+            </code>
+        </pre>
+            </div>
+        </div>
     </div> -->
 
-    <!-- badges -->
-    <!-- <div class="badges">23</div> -->
 
-    <!-- badge on icon -->
-    <!-- <div class="badge-on-icon">
-        <i class="fab fa-twitter icon-badge"><div class="badges badge-for-icon">99+</div></i>
-    </div> -->
 
-    <!-- badge-on-avatar -->
-    <!-- <div class="badge-on-avatar">
-        <img src="avatar1.png" alt="Avatar" class="avatar">
-        <div class="badges badge-for-avatar">99+</div>
-    </div> -->
+    
 
+    
+
+   
     <!-- button -->
     <!-- <button>normal button</button> -->
 
@@ -119,7 +349,6 @@
 
 
 
-<script src="/main/components page/prism.js"></script>
 <script src="/main/components page/componentapp.js"></script>
 </body>
 
