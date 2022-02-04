@@ -141,33 +141,36 @@ margin: 2rem 5%;
 } 
 
 /* button */
-/* .primary-button{
+.primary-button{
   text-decoration: none;
   color: var(--primary-colour);
   background-color: var(--secondary-colour);
   padding: 0.5rem;
   border-radius: 0.5rem;
-} */
-/* .link-button{
+} 
+ .link-button{
   color:var(--secondary-colour) ;
-} */
-/* .icon-button{
+} 
+ .icon-button{
   color: black;
   font-size: xx-large;
-} */
+}
 
 /* floating-button */
-/* .btn-floating{
+.btn-floating{
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: none;
   background: red;
   color: var(--primary-colour);
-  position: absolute;
+  position: fixed;
   bottom: 2rem;
   right: 2rem;
   cursor: pointer;
-} */
+}
+.white-text{
+  color: var(--primary-colour);
+}
 
 
 /* responsive-image */

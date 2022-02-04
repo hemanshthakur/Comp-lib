@@ -161,29 +161,32 @@
 
     <div class="content-box">
         <div class="main-content-div">
-            <h2 class="main-heading">*Alert</h2>
+            <h2 class="main-heading">*Badges</h2>
             <h2>Example</h2>
             <div class="demo-live">
                 <!-- badges -->
                 <div>
                     <p>Badge</p>
-                   <div class="badges">23</div>
-               </div>
-                    <!-- badge on icon -->
-       <div>
-           <p>Badge on icon</p>
-       <div class="badge-on-icon">
-           <i class="fab fa-twitter icon-badge"><div class="badges badge-for-icon">99+</div></i>
-       </div>
-   </div>
-       <!-- badge-on-avatar -->
-       <div>
-           <p>Badge on avatar</p>
-       <div class="badge-on-avatar">
-           <img src="https://lh3.googleusercontent.com/ogw/ADea4I7lNwdmzDDg79Bgv-pAeD1TzNRSbW3FZewUUkvvfg=s83-c-mo" alt="Avatar" class="avatar">
-           <div class="badges badge-for-avatar">99+</div>
-       </div>
-   </div>
+                    <div class="badges">23</div>
+                </div>
+                <!-- badge on icon -->
+                <div>
+                    <p>Badge on icon</p>
+                    <div class="badge-on-icon">
+                        <i class="fab fa-twitter icon-badge">
+                            <div class="badges badge-for-icon">99+</div>
+                        </i>
+                    </div>
+                </div>
+                <!-- badge-on-avatar -->
+                <div>
+                    <p>Badge on avatar</p>
+                    <div class="badge-on-avatar">
+                        <img src="https://lh3.googleusercontent.com/ogw/ADea4I7lNwdmzDDg79Bgv-pAeD1TzNRSbW3FZewUUkvvfg=s83-c-mo"
+                            alt="Avatar" class="avatar">
+                        <div class="badges badge-for-avatar">99+</div>
+                    </div>
+                </div>
             </div>
 
 
@@ -251,9 +254,184 @@
         </div>
     </div>
 
+    <!-- button -->
+    <div class="content-box">
+        <div class="main-content-div">
+            <h2 class="main-heading">*Alert</h2>
+            <h2>Example</h2>
+            <div class="demo-live">
+                <div class="white-text">
+                    <button>normal button</button>
+                </div>
+
+                <div class="white-text"><a href="" class="primary-button">Primary</a> </div>
+
+                <div class="white-text"> <a href="" class="link-button">link</a></div>
+
+                <div class="white-text"><a href="" class="icon-button"><i class="fab fa-instagram"></i></a></div>
+
+                <!-- floating-button -->
+                <div class="white-text">
+                    <button id="btn-show-button" class="button-see-btn">Show </button>
+                    <button id="btn-hide-button" class="button-see-btn">Hide</button>
+                    <button id="button-box" class="btn-floating">Yamete Kudasai</button>
+                </div>
+
+            </div>
 
 
+            <h3>HTML</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+                &lt;div class="white-text">
+                    &lt;button>normal button&lt;button>
+                &lt;div>
+        
+                &lt;div class="white-text">&lt;a href="" class="primary-button">Primary&lt;a> &lt;div>
+        
+                &lt;div class="white-text"> &lt;a href=""class="link-button">link&lt;a>&lt;div>
+        
+                &lt;div class="white-text">&lt;a href="" class="icon-button">&lt;i class="fab fa-instagram">&lt;i>&lt;a>&lt;div>
+        
+            &lt;!-- floating-button -->
+            &lt;div class="white-text">
+            &lt;button id="btn-show-button" class="button-see-btn">Show &lt;button>
+            &lt;button id="btn-hide-button" class="button-see-btn">Hide&lt;button>
+            &lt;button id="button-box"class="btn-floating">Yamete Kudasai&lt;button>
+        &lt;div>
+               
    
+            </code>
+        </pre>
+            </div>
+
+            <h3>CSS</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+                .primary-button{
+                    text-decoration: none;
+                    color: var(--primary-colour);
+                    background-color: var(--secondary-colour);
+                    padding: 0.5rem;
+                    border-radius: 0.5rem;
+                  } 
+                   .link-button{
+                    color:var(--secondary-colour) ;
+                  } 
+                   .icon-button{
+                    color: black;
+                    font-size: xx-large;
+                  }
+                  
+                  /* floating-button */
+                  .btn-floating{
+                    padding: 0.5rem;
+                    border-radius: 0.5rem;
+                    border: none;
+                    background: red;
+                    color: var(--primary-colour);
+                    position: fixed;
+                    bottom: 2rem;
+                    right: 2rem;
+                    cursor: pointer;
+                  }
+                  .white-text{
+                    color: var(--primary-colour);
+                  }
+            </code>
+        </pre>
+            </div>
+            <h3>JS</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+            const btnShowButton = document.querySelector("#btn-show-button")
+            const boxButton = document.querySelector("#button-box")
+            const btnHideButton = document.querySelector("#btn-hide-button")
+
+            btnHideButton.style.display="none"
+            boxButton.style.display="none"
+
+            btnShowButton.addEventListener("click",()=>{
+                boxButton.style.display="flex"
+                btnHideButton.style.display="block"
+                btnShowButton.style.display="none"
+            })
+            btnHideButton.addEventListener("click",()=>{
+                boxButton.style.display="none"
+                btnShowButton.style.display="block"
+                btnHideButton.style.display="none"
+            })
+            </code>
+        </pre>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-box">
+        <div class="main-content-div">
+            <h2 class="main-heading">*Alert</h2>
+            <h2>Example</h2>
+            <div class="demo-live">
+                <div id="default-style">
+                    <div class="main-container">
+                        <img class="image-hero" src="image-hero .jpg">
+                        <div>
+                            <p class="header-tag">The Best Anime Ever.</p>
+                            <p class="author-Name">By Hemansh Thakur</p>
+                        </div>
+                        <p class="description-Text">See how this anime came to be the best in the world.</p>
+                        <div class="buttons-container">
+                            <button class="text-buttons">READ</button>
+                            <button class="text-buttons">BOOKMARK</button>
+                            <button class="icon-buttons"><i class="far fa-heart"></i></button>
+                            <button class="icon-buttons"><i class="fas fa-share-alt"></i></button>
+                            <button class="icon-buttons"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <h3>HTML</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+                &lt;div class="main-container">
+                    &lt;img class="image-hero" src="image-hero .jpg">
+                    &lt;div>
+                        &lt;p class="header-tag">The Best Anime Ever.&lt;p>
+                        &lt;p class="author-Name">By Hemansh Thakur&lt;p>
+                    &lt;div>
+                    &lt;p class="description-Text">See how this anime came to be the best in the world.&lt;p>
+                    &lt;div class="buttons-container">
+                        &lt;button class="text-buttons">READ&lt;button>
+                        &lt;button class="text-buttons">BOOKMARK&lt;button>
+                        &lt;button class="icon-buttons">&lt;i class="far fa-heart">&lt;i>&lt;button>
+                        &lt;button class="icon-buttons">&lt;i class="fas fa-share-alt">&lt;i>&lt;button>
+                        &lt;button class="icon-buttons">&lt;i class="fas fa-ellipsis-v">&lt;i>&lt;button>
+                    &lt;div>
+                &lt;div>
+            </code>
+        </pre>
+            </div>
+
+            <h3>CSS</h3>
+            <div class="code-wrapper">
+                <pre class="demo-code">
+            <code>
+               
+            </code>
+        </pre>
+            </div>
+
+        </div>
+    </div>
+
 
 
     <!-- <div class="content-box">
@@ -295,28 +473,13 @@
 
 
 
-    
 
-    
 
-   
-    <!-- button -->
-    <!-- <button>normal button</button> -->
 
-    <!-- <a href="" class="primary-button">Primary</a> -->
 
-    <!-- <a href=""class="link-button">link</a> -->
 
-    <!-- <a href="" class="icon-button"><i class="fab fa-instagram"></i></a> -->
 
-    <!-- floating-button -->
-    <!-- <button id="btn-show-button" class="button-see-btn">Show </button>
-    <button id="btn-hide-button" class="button-see-btn">Hide</button>
 
-        <button id="button-box"class="btn-floating">
-            Yamete Kudasai
-        </button>
-     -->
     <!-- Cards -->
     <!-- main container -->
     <!-- <div class="main-container">

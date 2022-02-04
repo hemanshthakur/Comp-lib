@@ -19,23 +19,23 @@ btnHideAlert.addEventListener("click",()=>{
 }
 )
 
-//FLOATING-BUTTON
-// const btnShowButton = document.querySelector("#btn-show-button")
-// const boxButton = document.querySelector("#button-box")
-// const btnHideButton = document.querySelector("#btn-hide-button")
+// FLOATING-BUTTON
+const btnShowButton = document.querySelector("#btn-show-button")
+const boxButton = document.querySelector("#button-box")
+const btnHideButton = document.querySelector("#btn-hide-button")
 
-// btnHideButton.style.display="none"
-// boxButton.style.display="none"
+btnHideButton.style.display="none"
+boxButton.style.display="none"
 
-// btnShowButton.addEventListener("click",()=>{
-//     boxButton.style.display="flex"
-//     btnHideButton.style.display="block"
-//     btnShowButton.style.display="none"
-// }
-// )
-// btnHideButton.addEventListener("click",()=>{
-//     boxButton.style.display="none"
-//     btnShowButton.style.display="block"
-//     btnHideButton.style.display="none"
-// }
-// )
+btnShowButton.addEventListener("click",()=>{
+    boxButton.style.display="flex"
+    btnHideButton.style.display="block"
+    btnShowButton.style.display="none"
+}
+)
+btnHideButton.addEventListener("click",()=>{
+    boxButton.style.display="none"
+    btnShowButton.style.display="block"
+    btnHideButton.style.display="none"
+}
+)
