@@ -1,7 +1,7 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
 }
-.main-container{
+.main-container1{
     
     height: 280px;
     width: 250px;
@@ -11,19 +11,19 @@ body{
     border-radius: 5px;
     
 }
-.image-hero{
+.image-hero1{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 
 }
-.text-alignment{
+.text-alignment1{
     margin: 0px 10px;
 }
-.header-tag{    
+.header-tag1{    
     font-weight:bold ;
 
 }
-.author-Name{
+.author-Name1{
     color: gray;
     font-size: 14px;
    
@@ -31,11 +31,11 @@ body{
 p{
     margin: 6px 10px;
 }
-.description-Text{
+.description-Text1{
     color: gray;
     font-size: 12px;
 }
-.buttons-container{
+.buttons-container1{
     display: flex;
     justify-content: space-between;
 }
@@ -47,11 +47,11 @@ button{
 button:hover{
     background-color: #f2f2f2;
 }
-.text-buttons{
+.text-buttons1{
     color:#000066;
     font-weight: bold;
 }
 
-.icon-buttons{
+.icon-buttons1{
     border-radius: 100%;
 }
