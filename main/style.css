@@ -107,3 +107,8 @@ a{
 .btn-items{
     cursor: pointer;
 }
+@media (max-width:800px){
+    body{
+      font-size: 10px;
+    }
+}
