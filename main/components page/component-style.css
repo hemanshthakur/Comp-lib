@@ -16,13 +16,14 @@ body {
   margin: 0rem;
 }
 .header-tag {
+  height: 5rem;
   font-size: 3rem;
   margin:0rem;
-  padding-top: 1rem;
-  padding-left: 2rem;
+  /* padding-top: 1rem;
+  padding-left: 2rem; */
   background-color: var(--hover-over);
-  border-bottom-right-radius:2rem ;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   box-shadow: 0rem 0rem 0.2rem var(--shade-color);
 }
@@ -37,6 +38,7 @@ a{
   color: var(--primary-colour);
 }
 .back-arrow{
+  font-size: 2rem;
   position: absolute;
   left:1rem;
 }
