@@ -1,14 +1,15 @@
 :root{
-    --primary-colour:white;
-    --secondary-colour:black;
-    --hover-over: #00E1EF;
-}body {
+    --lander-primary-colour:white;
+    --lander-secondary-colour:black;
+    --lander-hover-over: #00E1EF;
+}
+body {
     background-image: url('bg-img-main.jpg');
     /* background-color:black; */
     background-size: 100% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: var(--primary-colour);
+    color: var(--lander-primary-colour);
     font-family: 'Murecho', sans-serif;
     margin: 0rem;
 }
@@ -18,7 +19,7 @@
     margin:0rem;
     padding-top: 1rem;
     padding-left: 2rem;
-    background-color: var(--hover-over);
+    background-color: var(--lander-hover-over);
     border-bottom-right-radius:2rem ;
     display: flex;
     justify-content: space-between;
@@ -49,13 +50,13 @@
     align-self: flex-end;
 }
 .header-tag  a{
-    color: var(--secondary-colour);
+    color: var(--lander-secondary-colour);
 }
 .header-tag a:hover{
-   color: var(--primary-colour);
+   color: var(--lander-primary-colour);
 }
 .header-tag .list-items a:hover{
-    color: var(--primary-colour);
+    color: var(--lander-primary-colour);
  }
 .main-container{
     display: flex;
@@ -77,26 +78,26 @@
 }
 a{
     text-decoration: none;
-    color: var(--primary-colour);
+    color: var(--lander-primary-colour);
 }
 .btn-get-started {
     align-self:flex-end;
     
 }
 .btn-get-started a{
-    border: 0.1rem solid var(--primary-colour);
+    border: 0.1rem solid var(--lander-primary-colour);
     font-size: 1.5rem;
     border-radius: 0.2rem ;
     padding: 0.8rem 3rem ;
 }
 .btn-get-started a:hover{
-    border: 0.1rem solid  var(--hover-over);
-    background-color: var(--hover-over);
-    color: var(--secondary-colour);
+    border: 0.1rem solid  var(--lander-hover-over);
+    background-color: var(--lander-hover-over);
+    color: var(--lander-secondary-colour);
     
 }
 .list-items a:hover{
-    color:var(--hover-over);
+    color:var(--lander-hover-over);
 }
 .about-text{
     align-self: center;
